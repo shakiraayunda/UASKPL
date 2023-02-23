@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@foreach(var item in Model.Product){
+<div class="card">
+        <img src="/images/@Html.DisplayFor(modelItem => item.ImageUrl)" alt="@Html.DisplayFor(modelItem=>item.Name)" style="width:100%">
+    <h1>@Html.DisplayFor(modelItem=>item.Name)</h1>
+        <p class="price">Rp @Html.DisplayFor(modelItem=>item.Price)</p>
+        <p>@Html.DisplayFor(modelItem=>item.Description)</p>
+    <p><button>Detail</button></p>
+</div>
+}
+
