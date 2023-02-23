@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\Pluto 01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\admindcasrama.POLTEKSSN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pluto 01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admindcasrama.POLTEKSSN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,9 +44,17 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.14, )"
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -61,10 +69,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.13, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.11, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

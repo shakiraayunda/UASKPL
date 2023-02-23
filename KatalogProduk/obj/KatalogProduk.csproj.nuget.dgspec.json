@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\KatalogProduk\\KatalogProduk.csproj": {}
+    "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\KatalogProduk\\KatalogProduk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\KatalogProduk\\KatalogProduk.csproj": {
+    "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\KatalogProduk\\KatalogProduk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\KatalogProduk\\KatalogProduk.csproj",
+        "projectUniqueName": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\KatalogProduk\\KatalogProduk.csproj",
         "projectName": "KatalogProduk",
-        "projectPath": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\KatalogProduk\\KatalogProduk.csproj",
-        "packagesPath": "C:\\Users\\Pluto 01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pluto 01\\source\\repos\\KatalogProduk\\KatalogProduk\\obj\\",
+        "projectPath": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\KatalogProduk\\KatalogProduk.csproj",
+        "packagesPath": "C:\\Users\\admindcasrama.POLTEKSSN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admindcasrama.POLTEKSSN\\source\\repos\\UASKPL\\KatalogProduk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pluto 01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admindcasrama.POLTEKSSN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,37 +44,43 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
-            "Microsoft.AspNetCore.Authentication.Facebook": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.0.11, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.14, )"
-            },
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.13, )"
             },
-            "Microsoft.AspNetCore.Identity.UI": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.13, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[13.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

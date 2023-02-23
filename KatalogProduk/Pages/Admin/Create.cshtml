@@ -1,0 +1,78 @@
+﻿@page
+@model KatalogProduk.Pages.Admin.CreateModel
+@{
+    ViewData["Title"] = "Add User";
+}
+
+@if (TempData.ContainsKey("Message"))
+{
+    if (TempData.ContainsKey("Tipe"))
+    {
+        string tipe = TempData["Tipe"].ToString();
+        if (tipe == "danger")
+        {
+            <div class="alert alert-danger">
+                @TempData["Message"]
+            </div>
+        } else if (tipe == "success")
+        {
+            <div class="alert alert-success">
+                @TempData["Message"]
+            </div>
+        }
+    }
+    
+}
+
+
+<h1>Add User</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserApiDto.FullName" class="control-label"></label>
+                <input asp-for="UserApiDto.FullName" class="form-control" id="LastName" />
+                <span asp-validation-for="UserApiDto.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserApiDto.Email" class="control-label"></label>
+                <input asp-for="UserApiDto.Email" class="form-control" id="Email"/>
+                <span asp-validation-for="UserApiDto.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserApiDto.ProfileFile" class="control-label"></label>
+                <input asp-for="UserApiDto.ProfileFile" class="form-control" />
+                <span asp-validation-for="UserApiDto.ProfileFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserApiDto.Password" class="control-label"></label>
+                <input asp-for="UserApiDto.Password" class="form-control" id="Password" />
+                <span asp-validation-for="UserApiDto.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                 <label asp-for="UserApiDto.role" class="control-label">Role</label>
+                <select asp-for="UserApiDto.role" class="form-control"> 
+                    <option disabled selected>--PILIH ROLE--</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Add User" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./User">Back to User List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

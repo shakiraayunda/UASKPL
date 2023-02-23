@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using WebAPI.Models;
 
 namespace WebAPI.Data
 {
-    public class IAuthManager
+    public interface IAuthManager
     {
         Task<IEnumerable<IdentityError>> Register(UserApiDto userDto);
 

@@ -553,3 +553,15 @@ C:\Users\Pluto 01\source\repos\KatalogProduk\KatalogProduk\obj\Debug\net6.0\refi
 C:\Users\Pluto 01\source\repos\KatalogProduk\KatalogProduk\obj\Debug\net6.0\KatalogProduk.pdb
 C:\Users\Pluto 01\source\repos\KatalogProduk\KatalogProduk\obj\Debug\net6.0\KatalogProduk.genruntimeconfig.cache
 C:\Users\Pluto 01\source\repos\KatalogProduk\KatalogProduk\obj\Debug\net6.0\ref\KatalogProduk.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.csproj.AssemblyReference.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.AssemblyInfoInputs.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.AssemblyInfo.cs
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.csproj.CoreCompileInputs.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.RazorAssemblyInfo.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.RazorAssemblyInfo.cs
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\refint\KatalogProduk.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\KatalogProduk\obj\Debug\net6.0\KatalogProduk.pdb

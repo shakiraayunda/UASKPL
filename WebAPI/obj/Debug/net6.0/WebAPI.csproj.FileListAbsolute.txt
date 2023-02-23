@@ -270,3 +270,13 @@ C:\Users\Pluto 01\source\repos\KatalogProduk\WebAPI\obj\Debug\net6.0\refint\WebA
 C:\Users\Pluto 01\source\repos\KatalogProduk\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\Pluto 01\source\repos\KatalogProduk\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\Pluto 01\source\repos\KatalogProduk\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+C:\Users\admindcasrama.POLTEKSSN\source\repos\UASKPL\WebAPI\obj\Debug\net6.0\WebAPI.pdb

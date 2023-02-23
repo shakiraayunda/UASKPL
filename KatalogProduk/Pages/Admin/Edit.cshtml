@@ -1,0 +1,81 @@
+﻿@page
+@model KatalogProduk.Pages.Admin.EditModel
+@{
+
+    ViewData["Title"] = "Edit User";
+}
+
+@if (TempData.ContainsKey("Message"))
+{
+    if (TempData.ContainsKey("Tipe"))
+    {
+        string tipe = TempData["Tipe"].ToString();
+        if (tipe == "danger")
+        {
+            <div class="alert alert-danger">
+                @TempData["Message"]
+            </div>
+        } else if (tipe == "success")
+        {
+            <div class="alert alert-success">
+                @TempData["Message"]
+            </div>
+        }
+    }
+    
+}
+
+<h1>Edit User</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Users.FullName" class="control-label"></label>
+                <input asp-for="Users.FullName" class="form-control" id="LastName" />
+                <span asp-validation-for="Users.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Users.Email" class="control-label"></label>
+                <input asp-for="Users.Email" class="form-control" id="Email"/>
+                <span asp-validation-for="Users.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Current Profile Picture</label>
+                <img class="form-control" src="/images/@Html.DisplayFor(Model => Model.Users.ProfileUrl)" style="width: 100px">
+            </div>
+            <div class="form-group">
+                <label class="control-label">New Profile Picture</label>
+                <input asp-for="newProfile" type="File" class="form-control" data-val="false"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Users.role" class="control-label">Role</label>
+                <select asp-for="Users.role" class="form-control"> 
+                    <option disabled selected>--PILIH ROLE--</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Users.Password" class="control-label"></label>
+                <input asp-for="Users.Password" type="password" class="form-control" id="Password" />
+                <span asp-validation-for="Users.Password" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./User">Back to User List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

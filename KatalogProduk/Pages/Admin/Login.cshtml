@@ -1,0 +1,70 @@
+﻿@page
+@model KatalogProduk.Pages.Admin.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+@if (@Model.Message != null)
+{
+    <div class="alert alert-danger">
+        @Model.Message
+    </div>
+}
+
+@if (TempData.ContainsKey("Message"))
+{
+    if (TempData.ContainsKey("Tipe"))
+    {
+        string tipe = TempData["Tipe"].ToString();
+        if (tipe == "danger")
+        {
+            <div class="alert alert-danger">
+                @TempData["Message"]
+            </div>
+        } else if (tipe == "success")
+        {
+            <div class="alert alert-success">
+                @TempData["Message"]
+            </div>
+        }
+    }
+    
+}
+
+
+<h1>Login</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="ReturnUrl" type="hidden" class="form-control" />
+            <div class="form-group">
+                <label asp-for="LoginDto.Email" class="control-label"></label>
+                <input asp-for="LoginDto.Email" class="form-control" id="Email"/>
+                <span asp-validation-for="LoginDto.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoginDto.Password" class="control-label"></label>
+                <input asp-for="LoginDto.Password" class="form-control" id="Password" />
+                <span asp-validation-for="LoginDto.Password" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a>Belum punya akun? </a><a asp-page="/Admin/Register">Register disini</a>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} 
+}

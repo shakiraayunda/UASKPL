@@ -1,0 +1,72 @@
+﻿@page
+@model KatalogProduk.Pages.Admin.UserModel
+
+@{
+    ViewData["Title"] = "Users List";
+}
+
+
+@if (TempData.ContainsKey("Message"))
+{
+    if (TempData.ContainsKey("Tipe"))
+    {
+        string tipe = TempData["Tipe"].ToString();
+        if (tipe == "danger")
+        {
+            <div class="alert alert-danger">
+                @TempData["Message"]
+            </div>
+        } else if (tipe == "success")
+        {
+            <div class="alert alert-success">
+                @TempData["Message"]
+            </div>
+        }
+    }
+    
+}
+
+<h1>Users List</h1>
+
+<div>
+    <a asp-page="./Create" class="btn btn-primary">Add User</a>
+</div>
+
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Foto Profile
+            </th>
+            <th>
+                Nama Lengkap
+            </th>
+            <th>
+                Email
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Users) {
+        <tr>
+            <td style="width:20%">
+                <img src="/images/@Html.DisplayFor(modelItem => item.ProfileUrl)" style="width:100px">
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
